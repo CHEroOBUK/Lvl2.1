@@ -57,4 +57,9 @@ public class Human implements Competitor {
     public void info() {
         System.out.println(name + " - " + active);
     }
+
+    @Override
+    public void getAbilities() {
+        System.out.println(name + " может пробежать: " + maxRunDistance + "м.\tпроплыть: " + maxSwimDistance + "м.\tперепрыгнуть: " + maxJumpHeight + "м.");
+    }
 }
