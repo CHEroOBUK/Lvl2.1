@@ -63,4 +63,9 @@ public class Animal implements Competitor {
     public void info() {
         System.out.println(type + " " + name + " - " + onDistance);
     }
+
+    @Override
+    public void getAbilities() {
+        System.out.println(type + " " + name + " может пробежать: " + maxRunDistance + "м.\tпроплыть: " + maxSwimDistance + "м.\tперепрыгнуть: " + maxJumpHeight + "м.");
+    }
 }
